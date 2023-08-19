@@ -4626,7 +4626,7 @@ String String::get_base_dir() const {
 	String rs;
 	String base;
 	if (end != 0) {
-		rs = substr(end, length());
+		rs = substr(end, length() - end);
 		base = substr(0, end);
 	} else {
 		rs = *this;
